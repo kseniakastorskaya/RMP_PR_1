@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KastorskayaKseniaAndreevna</string>
+    <string name="main_text_view">Главный экран</string>
+    <string name="main_edit_view">Введите имя питомца</string>
+    <string name="main_button">Главная кнопка</string>
+
+    <string name="zoo_text_view">Вторая страница</string>
+    <string name="zoo_edit_view">Введите имя кота</string>
+    <string name="zoo_button">Далее</string>
+</resources>
