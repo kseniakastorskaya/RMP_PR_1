@@ -34,5 +34,17 @@ class LinearActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnGoToNameInput = findViewById<Button>(R.id.btnGoToNameInput)
+        val btnGoToFragments = findViewById<Button>(R.id.btnGoToFragments)
+
+        btnGoToNameInput.setOnClickListener {
+            val intent = Intent(this, NameInputActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnGoToFragments.setOnClickListener {
+            val intent = Intent(this, FragmentsDemoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

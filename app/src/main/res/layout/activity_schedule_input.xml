@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_large"
+    android:background="@color/background_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ввод расписания"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Предмет:"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/tvSelectedSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/purple_500"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <EditText
+        android:id="@+id/etDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите день недели"
+        android:padding="@dimen/padding_medium"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF666666"
+        android:layout_marginBottom="@dimen/padding_medium"/>
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите время (например, 15:30)"
+        android:padding="@dimen/padding_medium"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF666666"
+        android:layout_marginBottom="@dimen/padding_medium"/>
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите комментарий"
+        android:padding="@dimen/padding_medium"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF666666"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="OK"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

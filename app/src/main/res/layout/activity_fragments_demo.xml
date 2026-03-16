@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_large"
+    android:background="@color/background_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Демонстрация фрагментов"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <!-- Статический фрагмент (1 способ) -->
+    <fragment
+        android:id="@+id/static_fragment"
+        android:name="com.example.kastorskayakseniaandreevna.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/padding_medium"/>
+
+    <!-- Динамический фрагмент будет загружаться сюда (2 и 3 способы) -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/padding_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnStaticFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Статический"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnDynamicFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Динамический"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnContainerFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Container"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

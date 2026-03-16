@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
     android:orientation="vertical"
     android:padding="@dimen/padding_large"
     android:background="@color/background_light">
@@ -10,50 +9,48 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/linear_layout"
+        android:text="Информация о студенте"
         android:textSize="@dimen/text_size_large"
         android:textColor="@color/purple_500"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="#FF000000"
         android:layout_marginBottom="@dimen/padding_medium"/>
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_name"
-        android:padding="@dimen/padding_medium"
-        android:layout_marginBottom="@dimen/padding_small"/>
+        android:text="Выберите предмет:"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="#FF000000"
+        android:layout_marginTop="@dimen/padding_large"/>
 
-    <EditText
-        android:id="@+id/etEmail"
+    <Spinner
+        android:id="@+id/spinnerSubject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_email"
-        android:padding="@dimen/padding_medium"
-        android:layout_marginBottom="@dimen/padding_medium"/>
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_large"/>
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnGoToSchedule"
         android:layout_width="match_parent"
         android:layout_height="@dimen/button_height"
-        android:text="@string/next"
+        android:text="Ввести информацию о расписании"
         android:background="@drawable/button_bg"
         android:textColor="@android:color/white"/>
 
     <Button
-        android:id="@+id/btnGoToNameInput"
+        android:id="@+id/btnBackFromSubject"
         android:layout_width="match_parent"
         android:layout_height="@dimen/button_height"
-        android:text="Задание с посещениями"
-        android:background="@drawable/button_bg"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="@dimen/padding_medium"/>
-
-    <Button
-        android:id="@+id/btnGoToFragments"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/button_height"
-        android:text="Демо фрагментов"
+        android:text="Назад"
         android:background="@drawable/button_bg"
         android:textColor="@android:color/white"
         android:layout_marginTop="@dimen/padding_medium"/>

@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KastorskayaKseniaAndreevna">
 
-        <activity android:name=".LinearActivity"
-            android:exported="true">
+        <!-- Существующие Activity -->
+        <activity android:name=".LinearActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -21,6 +21,12 @@
         <activity android:name=".RelativeActivity" />
         <activity android:name=".ConstraintActivity" />
         <activity android:name=".FrameActivity" />
+
+        <!-- Новые Activity (проверьте, что они есть) -->
+        <activity android:name=".NameInputActivity" />
+        <activity android:name=".SubjectInputActivity" />
+        <activity android:name=".ScheduleInputActivity" />
+        <activity android:name=".FragmentsDemoActivity" />
 
     </application>
 
