@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Демо приложение</string>
+    <string name="linear_layout">Линейный макет</string>
+    <string name="relative_layout">Относительный макет</string>
+    <string name="constraint_layout">Макет ограничений</string>
+    <string name="frame_layout">Фреймовый макет</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="enter_email">Введите email</string>
+    <string name="submit">Отправить</string>
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="user_email">Email</string>
+</resources>

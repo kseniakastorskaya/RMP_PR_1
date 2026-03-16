@@ -7,4 +7,17 @@
     <string name="zoo_text_view">Вторая страница</string>
     <string name="zoo_edit_view">Введите имя кота</string>
     <string name="zoo_button">Далее</string>
+
+    <string name="linear_layout">Linear Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="enter_email">Введите email</string>
+    <string name="submit">Отправить</string>
+    <string name="back">Назад</string>
+    <string name="next">Далее</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="user_email">Email</string>
 </resources>

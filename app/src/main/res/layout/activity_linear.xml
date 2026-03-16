@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_large"
+    android:background="@color/background_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_layout"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_medium"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        android:padding="@dimen/padding_medium"
+        android:layout_marginBottom="@dimen/padding_small"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:padding="@dimen/padding_medium"
+        android:layout_marginBottom="@dimen/padding_medium"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/next"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
